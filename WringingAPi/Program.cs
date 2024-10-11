@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using WringingAPi.Configuration;
+using WringingAPi.Data;
 using WringingAPi.Service;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<ApiDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("ConexaoPadrao")));
 
 // Adiciona suporte para controladores
 builder.Services.AddControllers(); // <--- Adicione esta linha

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WringingAPi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f527dffdf6d8797ea6a0aa7f27f3be3d86aed0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("WringingAPi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WringingAPi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
